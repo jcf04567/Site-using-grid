@@ -1,0 +1,104 @@
+@charset 'utf-8';
+
+/* reset scssの読み込み*/
+@import "./reset";
+
+/* 変数定義の読み込み*/
+@import "./variable";
+
+/* 共通処理読み込み */
+@import "./common";
+
+
+/* iphone 及び共通設定 */
+@include comFFamily; // h1,h2,p Font-Family
+@include PDef; // P Tag Define
+
+.container {
+  @include baseContainerDef; //container 基本(スマホ)全体の定義
+
+  @include baseHeaderDef; // header 部分基本(スマホ)定義
+
+  @include baseTopPhotoDef; // トップ写真部分基本(スマホ)定義
+
+  & .contact_form {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    margin-bottom: 30px;
+    & h2 {
+      font-size: $h2FSize;
+      color:$h2Color;
+      margin-bottom: 15px;
+      grid-column: 2;
+    }
+    & form {
+      grid-column: 2;
+      & .p_label {
+        grid-column: 2;
+        height: 25px;
+        margin-bottom: 8px;
+        & label {
+          & span {
+            display: inline-block;
+            width: 20%;
+          }
+        }
+      }
+    }
+    & .p_submit {
+      grid-column: 2;
+    }
+    & a {
+      display: block;
+      grid-column: 2;
+      width: 40px;
+      height: 20px;
+      line-height: 20px;
+      margin: 0 0 0 auto;
+      & .modoru {
+        text-align: center;
+        margin-top: 10px;
+        border: solid 1px $solidColor;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  @include basePTopDef; // Topに戻る基本(スマホ)定義
+
+  @include baseSNSDef; // SNSリンク部分基本(スマホ)定義
+
+  @include baseFooterDef; // footer部分基本(スマホ)定義
+}
+
+/* iPadの設定 */
+@media screen and (min-width: $minPad) {
+  @include ipadPDef; // ipad用pタグ処理
+
+  .container {
+    @include ipadHeaderDef; // header 部分ipad定義
+
+    & .contact_form {
+      grid-template-columns: 1fr 3fr 1fr;
+
+      & a {
+        width: 60px;
+      }
+    }
+
+    @include ipadPTopDef; //PageTopに戻る部分ipad定義
+
+    @include ipadSNSDef; //SNSリンク部分ipad定義
+
+    @include ipadFooterDef; //footer部分ipad定義
+  }
+}
+
+/* PCサイズ */
+
+@media screen and (min-width: $minPc) {
+  .container {
+    @include pcContainerDef;//container全体pc定義
+
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>観察日記-蝶観察クラブ</title>
+    <link rel="icon" href="./images/BB4_butterfly.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/watcing.css" />
+
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "dsd7crf",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>蝶観察クラブ</h1>
+        <ul>
+          <li>About Us</li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </header>
+      <p style="color: red; font-weight: bold">
+        -レスポンシブデザインのサンプルサイト-
+      </p>
+      <p style="color: red;" >
+        サイトとしては最低限の構成です。
+      </p>
+      <div class="TopPhoto">
+        <img src="images/TopPhoto.jpg" alt="メインイメージ画像" />
+      </div>
+
+      <section class="watching_contents">
+        <h2>公園1　春の蝶観察会</h2>
+        <div class="watching_contents_1">
+          <img src="images/park_1.jpg" alt="公園1" />
+          <figure class="birds">
+            <img src="images/BB4_butterfly.jpg" alt="蝶4" />
+            <img src="images/BB5_butterfly.jpg" alt="蝶5" />
+            <img src="images/BB7_butterfly.jpg" alt="蝶7" />
+            <img src="images/BB10_butterfly.jpg" alt="蝶10" />
+          </figure>
+        </div>
+        <div class="watching_contents_2">
+          <p class="watching_text">
+            　今回の観察会は「公園1」です。開発の進んだ●●●に残る貴重な蝶観察地です。<br />
+            にぎやかな場所ですが、今は冬の蝶たちが去って少し静かになっているので落ち着いた観察ができます。<br />
+            私たちが普段街で見かける蝶の他に珍しい蝶も観察できます。<br />
+          </p>
+          <p class="watching_guide">
+            日時：4月20日（日）8:00〜<br />
+            集合場所：▼▼▼線　▲▲▲駅<br />
+            用意する物：観察器具やカメラはご自分でお持ちください。<br />
+            お子様連れでの参加も歓迎します。
+          </p>
+          <p class="watching_text">
+            今回の観察会では写真のような蝶が見られる予定です。他にもたくさんの蝶が見られます。ぜひおいでください。
+          </p>
+          <a href="./index.html"><p class="modoru">戻る</p></a>
+        </div>
+      </section>
+
+      <figure class="Page_top">
+        <a href="#"><img src="images/PageUp.png" alt="ページトップへのボタン画像" /></a>
+      </figure>
+
+      <figure class="SNS">
+        <figure class="SNS_Logo">
+          <a href="https://ja-jp.facebook.com/"
+            ><img src="images/sns_1.png" alt="facebookのロゴマーク"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="images/sns_2.png" alt="twitterのロゴマーク"
+          /></a>
+          <a href="https://line.me/"
+            ><img src="images/sns_3.png" alt="Lineのロゴマーク"
+          /></a>
+          <a href="https://www.google.com/"
+            ><img src="images/sns_4.png" alt="googleのロゴマーク"
+          /></a>
+        </figure>
+      </figure>
+      <footer class="footer">
+        <p class="footer_title">このサイトの利用について</p>
+        <div class="footer_textbox">
+          <p class="footer_text">プライバシーポリシー<br />関連団体</p>
+          <p class="footer_text">情報公開について<br />著作権について</p>
+          <p class="footer_text">コピーライト<br />サイトマップ</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

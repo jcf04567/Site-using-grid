@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蝶1の観察-蝶観察クラブ</title>
+    <link rel="icon" href="./images/BB4_butterfly.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/butterfly.css" />
+
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "dsd7crf",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>蝶観察クラブ</h1>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </header>
+      <p style="color: red; font-weight: bold">
+        -レスポンシブデザインのサンプルサイト-
+      </p>
+      <p style="color: red;" >
+        サイトとしては最低限の構成です。
+      </p>
+      <div class="TopPhoto">
+        <img src="images/TopPhoto.jpg" alt="メインイメージ画像" />
+      </div>
+      <main class="main">
+        <h2>オオゴマダラ</h2>
+        <figure class="photo">
+          <img src="images/cyo1_.jpg" alt="オオゴマダラ" />
+          <figure class="mejiros">
+            <img src="images/BB8_butterfly.jpg" alt="オオゴマダラ" />
+            <img src="images/BB9_butterfly.jpg" alt="オオゴマダラ" />
+            <img src="images/BB11_butterfly.jpg" alt="オオゴマダラ" />
+          </figure>
+        </figure>
+        <article class="main-text">
+          <p class="p1">
+            学名：Idea leuconoe <br />分類：タテハチョウ科マダラチョウ亜科<br />
+            大きさ：前翅長7cm前後、開長は13cm<br />
+            分布：東南アジアに広く分布し、日本では喜界島、与論島以南の南西諸島に分布する。<br />
+            生態：他のマダラチョウの仲間はそのほとんどがガガイモ科の植物を食草としているが、オオゴマダラの幼虫はキョウチクトウ科のホウライカガミ及びガガイモ科のホウライイケマの葉を食べる。
+          </p>
+          <p class="p2">
+            　狭い場所でも生活環が成立するため飼育しやすいチョウの一つで、各地の動物園などでもよく飼育される。沖縄県の県蝶、うるま市、那覇市、宮古島市、石垣市の市の蝶にも指定されている。
+          </p>
+          <a href="./index.html"><p class="button_back">戻る</p></a>
+        </article>
+      </main>
+      <figure class="SNS">
+        <figure class="SNS_Logo">
+          <a href="https://ja-jp.facebook.com/"
+            ><img src="images/sns_1.png" alt="facebookのロゴマーク"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="images/sns_2.png" alt="twitterのロゴマーク"
+          /></a>
+          <a href="https://line.me/"
+            ><img src="images/sns_3.png" alt="Lineのロゴマーク"
+          /></a>
+          <a href="https://www.google.com/"
+            ><img src="images/sns_4.png" alt="googleのロゴマーク"
+          /></a>
+        </figure>
+      </figure>
+      <footer class="footer">
+        <p class="footer_title">このサイトの利用について</p>
+        <div class="footer_textbox">
+          <p class="footer_text">プライバシーポリシー<br />関連団体</p>
+          <p class="footer_text">情報公開について<br />著作権について</p>
+          <p class="footer_text">コピーライト<br />サイトマップ</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
